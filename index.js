@@ -58,7 +58,7 @@ function getStartingPoint(chat, maxTokens, chunkSize, tolerance = 0.1) {
 
     const targetAsPercentage = target / totalTokens;
     const targetWithTolerance = targetAsPercentage + tolerance;
-    const index = Math.floor(chat.length * targetWithTolerance);
+    const index = Math.ceil(chat.length * (1 - targetWithTolerance));
     const chunkedIndex = index - (index % chunkSize);
 
     return chunkedIndex;
