@@ -2,7 +2,7 @@ import { saveSettingsDebounced } from '../../../../script.js';
 import { extension_settings, renderExtensionTemplate } from '../../../extensions.js';
 import { getTokenCount, guesstimate } from '../../../tokenizers.js';
 
-const MODULE_NAME = 'CacheChunker';
+const MODULE_NAME = 'SillyTavern-CacheChunker';
 
 const settings = {
     enabled: true,
